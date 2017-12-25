@@ -1,0 +1,14 @@
+{
+  "name": "thedoctor",
+  "version": "1.0.0",
+  "description": "thedoctor on Docker",
+  "author": "Michael Alexandrov <lxndrvm@gmail.com>",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.16.2",
+    "aws-sdk": "^2.175.0"
+  }
+}

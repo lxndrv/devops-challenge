@@ -1,0 +1,9 @@
+version: '2'
+
+services:
+  thedoctor:
+      build: .
+      container_name: lxndrv-thedoctor-app
+      hostname: thedoctor-app
+      ports:
+        - "5000:5000"
