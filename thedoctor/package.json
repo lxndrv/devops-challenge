@@ -5,7 +5,13 @@
   "author": "Michael Alexandrov <lxndrvm@gmail.com>",
   "main": "app/app.js",
   "scripts": {
-    "start": "node app/app.js"
+    "start": "node app/app.js",
+    "test": "mocha --exit test/health.js"
+  },
+  "devDependencies": {
+    "mongoose": "^4.13.7",
+    "chai": "^4.1.2",
+    "chai-http": "^3.0.0"
   },
   "dependencies": {
     "express": "^4.16.2",
