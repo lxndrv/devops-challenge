@@ -17,7 +17,7 @@ script:
 
 
 after_success:
-  - cd thedoctor && docker build -t lxndrv/thedoctor .
+  - cd $TRAVIS_BUILD_DIR/thedoctor && docker build -t lxndrv/thedoctor .
   - docker images
   - if [ "$TRAVIS_BRANCH" == "master" ]; then
     docker login -u "$DOCKERHUB_USER" -p "$DOCKERHUB_PASSWORD";
