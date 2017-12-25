@@ -2,11 +2,24 @@ language: node_js
 node_js:
   - "7"
 
+services:
+  - docker
+
 cache:
   directories:
     - "node_modules"
 before_script:
   - npm install mocha -g
-  
+
 script:
   - cd thedoctor && npm test
+
+
+
+after_success:
+  - cd thedoctor && docker build -t lxndrv/thedoctor .
+  - docker ps -a
+  - if [ "$TRAVIS_BRANCH" == "master" ]; then
+    docker login -u "$DOCKERHUB_EMAIL" -p "$DOCKERHUB_PASSWORD";
+    docker push lxndrv/thedoctor;
+    fi
