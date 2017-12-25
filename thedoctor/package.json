@@ -1,11 +1,11 @@
 {
   "name": "thedoctor",
   "version": "1.0.0",
-  "description": "thedoctor on Docker",
+  "description": "TheDoctor on Docker",
   "author": "Michael Alexandrov <lxndrvm@gmail.com>",
-  "main": "app.js",
+  "main": "app/app.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node app/app.js"
   },
   "dependencies": {
     "express": "^4.16.2",
