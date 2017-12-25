@@ -20,6 +20,6 @@ after_success:
   - cd thedoctor && docker build -t lxndrv/thedoctor .
   - docker ps -a
   - if [ "$TRAVIS_BRANCH" == "master" ]; then
-    docker login -u "$DOCKERHUB_EMAIL" -p "$DOCKERHUB_PASSWORD";
+    docker login -u "$DOCKERHUB_EMAIL" -p "$DOCKERHUB_PASS";
     docker push lxndrv/thedoctor;
     fi
