@@ -6,7 +6,7 @@
   "main": "app/app.js",
   "scripts": {
     "start": "node app/app.js",
-    "test": "mocha --exit test/health.js"
+    "test": "npm install && mocha --exit test/health.js"
   },
   "devDependencies": {
     "mongoose": "^4.13.7",
