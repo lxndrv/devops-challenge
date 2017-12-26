@@ -2,7 +2,7 @@
 
 1. Setup aws credentials
 2. Check DynamoDB access and data:
-   aws dynamodb get-item --table-name devops-challenge --key '{"code_name": {"S":"thedoctor"}}' --output=json
+   `aws dynamodb get-item --table-name devops-challenge --key '{"code_name": {"S":"thedoctor"}}' --output=json`
 3. Create node app with /health and /secret routers
 4. Create package.json
 5. Add test
