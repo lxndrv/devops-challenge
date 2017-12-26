@@ -1,7 +1,7 @@
 var express = require('express');
 var app = express();
 require('./router.js')(app);
-module.exports = app
+module.exports = app;
 
 const PORT = 5000;
 

@@ -7,7 +7,7 @@ module.exports = function(app){
   app.get('/health', function(req, res){
 
 		var healthStatus = {
-			'container':'hub.docker.com',
+			'container':'https://hub.docker.com/r/lxndrv/thedoctor/',
 			'project':'https://github.com/lxndrv/devops-challenge',
 			'health':'healthy'
 		};

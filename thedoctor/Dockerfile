@@ -3,7 +3,6 @@ FROM node:carbon
 # Create app directory
 WORKDIR /usr/src/app
 
-RUN echo "TEST: $TEST"
 
 # Install app dependencies
 # A wildcard is used to ensure both package.json AND package-lock.json are copied
@@ -14,9 +13,10 @@ RUN npm install
 # If you are building your code for production
 # RUN npm install --only=production
 
+RUN mkdir app
 # Bundle app source
-COPY app/app.js .
-COPY app/router.js .
+COPY app/app.js app/
+COPY app/router.js app/
 
 EXPOSE 5000
 
