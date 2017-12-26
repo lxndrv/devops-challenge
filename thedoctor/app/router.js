@@ -17,9 +17,6 @@ module.exports = function(app){
 
 	app.get('/secret', function(req, res){
 		var params = {
-		//  AttributesToGet: [
-		//    "secret_code"
-		//   ],
 		  TableName : 'devops-challenge',
 		  Key : {
 		    "code_name" : {
@@ -27,7 +24,7 @@ module.exports = function(app){
 		    }
 		  }
 		};
-		//res.send('big secret');
+
 		db.getItem(params, function(err, data) {
 		  if (err) {
 		    	console.log(err); // an error occurred
