@@ -7,9 +7,9 @@
 
 Clone the project:
 
-git clone git@github.com:lxndrv/devops-challenge.git
+`git clone git@github.com:lxndrv/devops-challenge.git`
 
-Working directory: thedoctor
+Working directory: `thedoctor`
 
 Run tests:
 
